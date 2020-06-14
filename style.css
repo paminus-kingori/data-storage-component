@@ -1,0 +1,142 @@
+*{
+    /* font-size: 16px; */
+    box-sizing: border-box;
+    font-family: 'Be-vietnam',sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+position: relative;
+height: 100vh;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+color: #fff;
+background-color: hsl(229, 57%, 11%);
+}
+.back{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../fylo-data-storage-component-master/images/bg-desktop.svg") no-repeat;
+    background-size: cover;
+}
+.left,.right{
+    background-color:  hsl(228, 56%, 26%);
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px 0px black;
+    width: max-content;
+    padding: 25px;
+}
+.left{
+    margin: 25px;
+    min-width: 256px;
+    min-height: 150px;
+    display: flex;
+    border-top-right-radius: 80px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right{
+    font-size: 15px;
+    position: relative;
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.remainder{
+    position: absolute;
+    background-color: #fff;
+    padding: 11px;
+    color: #000;
+    font-weight: 700;
+    font-size: 22px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 137px;
+    border-radius: 5px;
+    top: -32px;
+    right: 4%;
+}
+.arrow{
+    position: absolute;
+    border-style: solid;
+    border-color: #fff transparent;
+    border-width: 23px 0px 0px 23px;
+    bottom: -15px;
+    /* height: 25px; */
+    right: 0px;
+}
+.progress{
+    display: flex;
+    justify-content: space-between;
+}
+progress{
+    width: 100%;
+}
+.text{
+    font-size: 14px;
+}
+.number{
+    display: flex;
+    margin-right: 2px;
+}
+.number div{
+    margin-right: .5px;
+}
+.eight{
+    transform: translateY(-1px);
+  
+}
+.five{
+    transform: translateY(1px);
+    
+}
+.GB{
+    color:  hsl(229, 7%, 55%);
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+
+.logo img{
+    width: 110px;
+}
+.icons img{
+    background: rgba(0, 0, 0, 0.62);
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 13px;
+}
+.icons img:nth-child(2){
+    padding: 7px 5px;
+}
+
+.icons img:nth-child(3){
+    padding: 9px 5px;
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 0;
+    font-size: 11px; 
+    text-align: center;
+ }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width:375px){
+body{
+    background: url("../fylo-data-storage-component-master/images/bg-mobile.svg");
+}
+.back{
+    display: none;
+}
+}
