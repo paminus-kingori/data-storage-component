@@ -78,8 +78,42 @@ background-color: hsl(229, 57%, 11%);
     display: flex;
     justify-content: space-between;
 }
+.bottom{
+    position: relative;
+    flex-grow: .5;
+    display: grid;
+    justify-items: normal;
+    align-content: space-evenly;
 
-
+}
+.outer{
+    position: relative;
+    width: 100%;
+    height: 14px;
+    background-color: #0f1b3d;
+    /* padding:2px; */
+    border-radius: 30px;
+}
+.inner{
+    position: absolute;
+    margin: 2px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: calc(100% * 0.815);
+    border-radius: 30px;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+.dot{
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border-radius: 50%;
+}
 progress[value]{
     width: 100%;
     /* Reset the default appearance */
