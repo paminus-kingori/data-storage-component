@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 *{
     /* font-size: 16px; */
     box-sizing: border-box;
-    font-family: 'Be-vietnam',sans-serif;
+    
+    font-family: 'Raleway',sans-serif;
 }
 body{
     margin: 0;
@@ -168,11 +170,11 @@ linear-gradient(-45deg,
 }
 sub{
     font-size: 12px;
-    vertical-align: 0px;
+    vertical-align: 1px;
 }
 sub:nth-child(2){
-    font-size: 15px;
-    vertical-align: -3px;
+    font-size: 13px;
+    vertical-align: -1px;
 }
 
 .logo img{
